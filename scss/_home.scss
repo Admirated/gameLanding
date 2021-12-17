@@ -65,9 +65,7 @@
          line-height: 21.46px;
       }
    }
-   &__logo {
-      transform: scale(0.5);
-   }
+
    &__bottom-wrapper {
       position: relative;
       top: -80px;
@@ -187,6 +185,7 @@
       }
       &__logo {
          margin-bottom: 350px;
+         transform: scale(0.5);
          margin-left: -80px;
       }
       &__bottom-wrapper {

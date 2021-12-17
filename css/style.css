@@ -538,11 +538,6 @@ body a:hover {
   line-height: 21.46px;
 }
 
-.home__logo {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-}
-
 .home__bottom-wrapper {
   position: relative;
   top: -80px;
@@ -654,6 +649,8 @@ body a:hover {
   }
   .home__logo {
     margin-bottom: 350px;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
     margin-left: -80px;
   }
   .home__bottom-wrapper {
