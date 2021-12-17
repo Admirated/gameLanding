@@ -1,0 +1,232 @@
+.page {
+   &__home {
+   }
+}
+.home {
+   &__wrapper {
+      position: relative;
+      top: -80px;
+      height: 647px;
+      margin: 0 auto;
+      background: var(--radial);
+      text-align: center;
+      padding-top: 150px;
+      &:before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         z-index: -1;
+         background: url("../assets/img/home_bg.png");
+         filter: blur(13px);
+      }
+      .btn {
+         pointer-events: auto;
+      }
+      .home__text {
+         margin-bottom: 60px;
+      }
+   }
+   &__container {
+      position: relative;
+      margin: 0 auto;
+      width: 850px;
+   }
+   &__bigDragon {
+      position: absolute;
+      top: 102px;
+      z-index: 3;
+      left: -150px;
+      &::before {
+         pointer-events: none;
+         content: "";
+         position: absolute;
+         width: 174px;
+         height: 168px;
+         top: 170px;
+         left: 225px;
+         z-index: -1;
+         background: url("../assets/img/home_dragonUnderBig.png");
+      }
+   }
+   &__smallDragon {
+      position: absolute;
+      z-index: 3;
+      bottom: -205px;
+      right: 111px;
+      height: 202px;
+   }
+   &__text {
+      margin-bottom: 30px;
+      p {
+         font-size: 18px;
+         line-height: 21.46px;
+      }
+   }
+   &__logo {
+      transform: scale(0.5);
+   }
+   &__bottom-wrapper {
+      position: relative;
+      top: -80px;
+      padding-top: 80px;
+      background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.73) 100%);
+   }
+   &__second-section {
+      position: relative;
+      max-width: 1444px;
+      margin: 0 auto;
+      top: -80px;
+      height: 630px;
+      padding-top: 100px;
+      &:before {
+         position: absolute;
+         content: "";
+         top: 50px;
+         left: 20px;
+         width: 333px;
+         height: 333px;
+         background: url("../assets/img/redDragon.png");
+      }
+      &:after {
+         position: absolute;
+         content: "";
+         bottom: -80px;
+         right: 20px;
+         width: 333px;
+         height: 333px;
+         background: url("../assets/img/yellowDragon.png");
+      }
+      .home {
+         &__video-wrapper {
+            width: 730px;
+            height: 365px;
+            background: #161616;
+            border-radius: 15px;
+            margin: 0 auto;
+         }
+      }
+   }
+
+   &__third-section {
+   }
+}
+
+@media screen and (max-width: 991px) {
+   .page {
+      &__home {
+      }
+   }
+   .home {
+      &__wrapper {
+         position: relative;
+         top: -80px;
+         height: 647px;
+         margin: 0 auto;
+         background: var(--radial);
+         text-align: center;
+         padding-top: 150px;
+         &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background: url("../assets/img/home_bg.png");
+            filter: blur(13px);
+         }
+         .btn {
+            pointer-events: auto;
+         }
+         .home__text {
+            margin-bottom: 60px;
+         }
+      }
+      &__container {
+         position: relative;
+         margin: 0 auto;
+         width: 850px;
+      }
+      &__bigDragon {
+         position: absolute;
+         top: 102px;
+         z-index: 3;
+         left: -150px;
+         &::before {
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            width: 174px;
+            height: 168px;
+            top: 170px;
+            left: 225px;
+            z-index: -1;
+            background: url("../assets/img/home_dragonUnderBig.png");
+         }
+      }
+      &__smallDragon {
+         position: absolute;
+         z-index: 3;
+         bottom: -205px;
+         right: 111px;
+         height: 202px;
+      }
+      &__text {
+         margin-bottom: 30px;
+         p {
+            font-size: 14px;
+            line-height: 17px;
+         }
+      }
+      &__logo {
+      }
+      &__bottom-wrapper {
+         position: relative;
+         top: -80px;
+         padding-top: 80px;
+         background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.73) 100%);
+      }
+      &__second-section {
+         position: relative;
+         max-width: 1444px;
+         margin: 0 auto;
+         top: -80px;
+         height: 630px;
+         padding-top: 100px;
+         &:before {
+            position: absolute;
+            content: "";
+            top: 50px;
+            left: 20px;
+            width: 333px;
+            height: 333px;
+            background: url("../assets/img/redDragon.png");
+         }
+         &:after {
+            position: absolute;
+            content: "";
+            bottom: -80px;
+            right: 20px;
+            width: 333px;
+            height: 333px;
+            background: url("../assets/img/yellowDragon.png");
+         }
+         .home {
+            &__video-wrapper {
+               width: 730px;
+               height: 365px;
+               background: #161616;
+               border-radius: 15px;
+               margin: 0 auto;
+            }
+         }
+      }
+
+      &__third-section {
+      }
+   }
+}
