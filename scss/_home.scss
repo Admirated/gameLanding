@@ -111,7 +111,6 @@
    }
 
    &__third-section {
-      padding-bottom: 100px;
    }
 }
 
@@ -156,9 +155,9 @@
       }
       &__bigDragon {
          position: absolute;
-         top: 260px;
+         top: 290px;
          z-index: 3;
-         left: 0px;
+         left: -63px;
          width: 250px;
          height: 191px;
          &::before {
@@ -167,8 +166,8 @@
             position: absolute;
             width: 249.69px;
             height: 354.69px;
-            top: -254px;
-            left: 95px;
+            top: -284px;
+            left: 155px;
             z-index: -1;
             background: url("../assets/img/home_mobile_dragon.png");
          }

@@ -1,0 +1,179 @@
+.page {
+   &__legends {
+      margin-top: -80px;
+      background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.73) 100%);
+      .card-slider {
+         transform: scale(0.8);
+         margin-top: -40px;
+         height: 380px;
+      }
+      .desk {
+         height: 738px;
+         margin-top: 10px;
+         padding-top: 50px;
+         &__description {
+            &:first-child {
+               width: 540px;
+            }
+            p {
+               text-align: center;
+               font-size: 20px;
+               line-height: 24px;
+            }
+         }
+      }
+   }
+}
+.legends {
+   &__wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      height: 480px;
+      width: 100%;
+      &:before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         z-index: 1;
+         background: url("../assets/img/legends_bg.png");
+         filter: blur(1px);
+      }
+   }
+   &__title {
+      z-index: 2;
+      p {
+         font-size: 24px !important;
+         line-height: 29px !important;
+      }
+   }
+   &__logo {
+      z-index: 2;
+      p {
+         font-size: 64px !important;
+         line-height: 76px !important;
+      }
+   }
+
+   .heroes {
+      &__container {
+         width: 260px;
+         height: 223px;
+      }
+      &__wrapper {
+         display: flex;
+         justify-content: space-between;
+         &:first-child {
+            margin-bottom: 48px;
+         }
+      }
+   }
+   .hero {
+      width: 85px;
+      height: 85px;
+      background-color: #fff;
+   }
+}
+
+@media screen and (max-width: 991px) {
+   .page {
+      &__legends {
+         margin-top: -80px;
+         background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.73) 100%);
+         .card-slider {
+            transform: scale(0.8);
+            margin-top: -40px;
+            height: 380px;
+         }
+         .desk {
+            height: 1448px;
+            margin-top: 10px;
+            flex-direction: column;
+            padding-top: 50px;
+            &__container {
+               &:first-child {
+                  flex-direction: column-reverse;
+               }
+            }
+            &__description {
+               &.last {
+                  margin-bottom: 100px;
+               }
+               &:first-child {
+                  padding-left: 20px;
+                  width: 303px;
+               }
+               p {
+                  text-align: center;
+                  font-size: 18px;
+                  line-height: 21.46px;
+               }
+            }
+         }
+      }
+   }
+   .legends {
+      &__wrapper {
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         position: relative;
+         height: 480px;
+         width: 100%;
+         &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            background: url("../assets/img/legends_bg.png");
+            filter: blur(1px);
+         }
+      }
+      &__title {
+         z-index: 2;
+         p {
+            font-size: 24px !important;
+            line-height: 29px !important;
+         }
+      }
+      &__logo {
+         z-index: 2;
+         p {
+            font-size: 36px !important;
+            line-height: 42.91px !important;
+         }
+      }
+
+      .heroes {
+         &__container {
+            width: 260px;
+            height: 223px;
+            margin-bottom: 30px;
+         }
+         &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            &:first-child {
+               margin-bottom: 48px;
+            }
+         }
+      }
+      .hero {
+         width: 85px;
+         height: 85px;
+         background-color: #fff;
+      }
+      .desk__container:last-child {
+         margin-top: 100px;
+      }
+   }
+}

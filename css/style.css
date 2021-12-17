@@ -587,10 +587,6 @@ body a:hover {
   margin: 0 auto;
 }
 
-.home__third-section {
-  padding-bottom: 100px;
-}
-
 @media screen and (max-width: 991px) {
   .home__wrapper {
     position: relative;
@@ -628,9 +624,9 @@ body a:hover {
   }
   .home__bigDragon {
     position: absolute;
-    top: 260px;
+    top: 290px;
     z-index: 3;
-    left: 0px;
+    left: -63px;
     width: 250px;
     height: 191px;
   }
@@ -640,8 +636,8 @@ body a:hover {
     position: absolute;
     width: 249.69px;
     height: 354.69px;
-    top: -254px;
-    left: 95px;
+    top: -284px;
+    left: 155px;
     z-index: -1;
     background: url("../assets/img/home_mobile_dragon.png");
   }
@@ -773,6 +769,27 @@ body a:hover {
 
 .desk .blueBtn {
   text-align: center;
+}
+
+@media screen and (max-width: 1360px) {
+  .desk-wrapper {
+    padding-top: 150px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .desk-wrapper {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .desk-wrapper {
+    padding-top: 50px;
+  }
+  .desk__container {
+    max-width: 850px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1347,5 +1364,215 @@ body a:hover {
     height: 320px;
     top: 5px;
     left: -35px;
+  }
+}
+
+.page__legends {
+  margin-top: -80px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.73) 100%);
+}
+
+.page__legends .card-slider {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  margin-top: -40px;
+  height: 380px;
+}
+
+.page__legends .desk {
+  height: 738px;
+  margin-top: 10px;
+  padding-top: 50px;
+}
+
+.page__legends .desk__description:first-child {
+  width: 540px;
+}
+
+.page__legends .desk__description p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.legends__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 480px;
+  width: 100%;
+}
+
+.legends__wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: url("../assets/img/legends_bg.png");
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.legends__title {
+  z-index: 2;
+}
+
+.legends__title p {
+  font-size: 24px !important;
+  line-height: 29px !important;
+}
+
+.legends__logo {
+  z-index: 2;
+}
+
+.legends__logo p {
+  font-size: 64px !important;
+  line-height: 76px !important;
+}
+
+.legends .heroes__container {
+  width: 260px;
+  height: 223px;
+}
+
+.legends .heroes__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.legends .heroes__wrapper:first-child {
+  margin-bottom: 48px;
+}
+
+.legends .hero {
+  width: 85px;
+  height: 85px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .page__legends {
+    margin-top: -80px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.73) 100%);
+  }
+  .page__legends .card-slider {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin-top: -40px;
+    height: 380px;
+  }
+  .page__legends .desk {
+    height: 1448px;
+    margin-top: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px;
+  }
+  .page__legends .desk__container:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .page__legends .desk__description.last {
+    margin-bottom: 100px;
+  }
+  .page__legends .desk__description:first-child {
+    padding-left: 20px;
+    width: 303px;
+  }
+  .page__legends .desk__description p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 21.46px;
+  }
+  .legends__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    height: 480px;
+    width: 100%;
+  }
+  .legends__wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: url("../assets/img/legends_bg.png");
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+  .legends__title {
+    z-index: 2;
+  }
+  .legends__title p {
+    font-size: 24px !important;
+    line-height: 29px !important;
+  }
+  .legends__logo {
+    z-index: 2;
+  }
+  .legends__logo p {
+    font-size: 36px !important;
+    line-height: 42.91px !important;
+  }
+  .legends .heroes__container {
+    width: 260px;
+    height: 223px;
+    margin-bottom: 30px;
+  }
+  .legends .heroes__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .legends .heroes__wrapper:first-child {
+    margin-bottom: 48px;
+  }
+  .legends .hero {
+    width: 85px;
+    height: 85px;
+    background-color: #fff;
+  }
+  .legends .desk__container:last-child {
+    margin-top: 100px;
   }
 }
