@@ -1,5 +1,6 @@
 .page {
    &__home {
+      margin: 0 auto;
    }
 }
 .home {
@@ -20,6 +21,7 @@
          bottom: 0;
          z-index: -1;
          background: url("../assets/img/home_bg.png");
+         background-size: cover;
          filter: blur(13px);
       }
       .btn {
@@ -70,7 +72,7 @@
       position: relative;
       top: -80px;
       padding-top: 80px;
-      background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.73) 100%);
+      background: linear-gradient(180deg, rgba(1, 12, 13, 0.98) 20.66%, #012533 100%);
    }
    &__second-section {
       position: relative;

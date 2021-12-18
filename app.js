@@ -20,8 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
       this.classList.add('_active');
    }
 
-   const swiper = new Swiper('.card-slider', {
-      loop: true,
+   new Swiper('.card-slider', {
       pagination: {
          el: '.swiper-pagination',
          dynamicBullets: true,
@@ -31,5 +30,23 @@ window.addEventListener('DOMContentLoaded', () => {
          prevEl: '.swiper-button-prev',
       },
       centeredSlides: true
+   });
+   new Swiper('.beasts .card-slider', {
+      pagination: {
+         el: '.beasts .swiper-pagination',
+         dynamicBullets: true,
+      },
+      navigation: {
+         nextEl: '.beasts .swiper-button-next',
+         prevEl: '.beasts .swiper-button-prev',
+      },
+      centeredSlides: false,
+      breakpoints: {
+         992: {
+            slidesPerView: 3,
+         }
+      },
+      slidesPerView: 1,
+      touchRatio: 0
    });
 })
