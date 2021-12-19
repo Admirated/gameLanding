@@ -1,7 +1,6 @@
 .page {
    &__bank {
       margin-top: -80px;
-      background: linear-gradient(180deg, rgba(1, 12, 13, 0.98) 20.66%, #012533 100%);
       margin: 0 auto;
       .desk {
          &__container {
@@ -38,7 +37,8 @@
       &:before {
          content: "";
          position: absolute;
-         top: 0;
+         top: -83px;
+
          left: 0;
          right: 0;
          bottom: 0;
@@ -51,7 +51,8 @@
       &:after {
          content: "";
          position: absolute;
-         top: 0;
+         top: -83px;
+
          left: 0;
          right: 0;
          bottom: 0;

@@ -1,5 +1,5 @@
 .page {
-   &__beasts {
+   &__roadmap {
       margin-top: -80px;
       margin: 0 auto;
       .desk {
@@ -16,10 +16,38 @@
                line-height: 22px;
             }
          }
+         &__container {
+            height: 374px;
+         }
       }
    }
 }
-.beasts {
+.roadmap {
+   &__logo {
+      margin-left: 34%;
+      position: relative;
+   }
+   .yellowDragon {
+      position: absolute;
+      transform: scale(0.5);
+      top: -100px;
+      left: -244px;
+   }
+
+   .blueDragon {
+      position: absolute;
+      top: 0;
+      right: 23px;
+   }
+   &__cards-wrapper {
+      margin-bottom: 20px;
+   }
+   .chars {
+      transform: scale(0.5);
+      position: absolute;
+      top: -39px;
+      left: 38px;
+   }
    &__wrapper {
       display: flex;
       justify-content: center;
@@ -32,11 +60,12 @@
          content: "";
          position: absolute;
          top: -83px;
-         left: 0;
+
+         left: -60px;
          right: 0;
          bottom: 0;
          z-index: 1;
-         background: url("../assets/img/beasts_bg.png");
+         background: url("../assets/img/roadmap_bg.png");
          background-size: cover;
          filter: blur(1px);
       }
@@ -44,7 +73,8 @@
          content: "";
          position: absolute;
          top: -83px;
-         left: 0;
+
+         left: -60px;
          right: 0;
          bottom: 0;
          z-index: 2;
@@ -61,84 +91,53 @@
          line-height: 29px !important;
       }
    }
-   &__logo {
+   &__title {
       z-index: 3;
       p {
          font-size: 64px !important;
          line-height: 76px !important;
       }
    }
-   .swiper-slide {
-      width: 160px !important;
-   }
    &__cards-wrapper {
       display: flex;
-      justify-content: center;
-      margin: 0 auto;
-      width: 600px !important;
-      margin-bottom: 40px;
-      height: 270px;
+      justify-content: space-between;
    }
    &__card-wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
+      width: 206px;
+      height: 278px;
+      background: url("../assets/img/gray_card-bg.png");
+      background-size: cover;
+      transform: scale(0.9);
+      padding: 30px 20px;
+      text-align: center;
    }
-   &__card {
-      position: relative;
-      padding-top: 30px;
-      &.greenDragon::before,
-      &.goldDragon::before,
-      &.purpleDragon::before {
-         content: "";
-         position: absolute;
-         top: 0px;
-         left: -40px;
-         height: 231px;
-         width: 231px;
-         z-index: 10;
-      }
-      &.greenDragon::before {
-         background: url("../assets/img/beasts_dragon.png");
-      }
-      &.purpleDragon::before {
-         background: url("../assets/img/beasts_dragon.png");
-      }
-      &.goldDragon::before {
-         background: url("../assets/img/beasts_goldDragon.png");
+   &__card-date {
+      margin-bottom: 30px;
+      p {
+         font-family: Augusta;
+         font-size: 24px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 29px;
+         letter-spacing: 0em;
+         text-align: center;
       }
    }
-
-   &__stars-wrapper {
-      display: flex;
-      justify-content: center;
-   }
-   &__star {
-      background: url("../assets/img/star.png");
-      width: 22px;
-      height: 22px;
-   }
-
-   .swiper-wrapper {
-      justify-content: center;
-      gap: 40px;
-   }
-}
-@media screen and (min-width: 992px) {
-   .beasts {
-      .swiper-pagination {
-         display: none;
-      }
-      .swiper-button-prev,
-      .swiper-button-next {
-         display: none;
+   &__card-description {
+      p {
+         font-family: Augusta;
+         font-size: 18px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 21px;
+         letter-spacing: 0em;
+         text-align: center;
       }
    }
 }
 @media screen and (max-width: 991px) {
    .page {
-      &__beasts {
+      &__roadmap {
          padding-bottom: 80px;
          margin-top: -80px;
          background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.73) 100%);
@@ -156,13 +155,21 @@
                   line-height: 22px;
                }
             }
+            &__container {
+               height: 1555px;
+            }
+            &-wrapper {
+               height: 1621px;
+            }
          }
       }
    }
-   .beasts {
-      .swiper-wrapper {
-         justify-content: flex-start;
-         gap: 40px;
+   .roadmap {
+      .chars {
+         p {
+            font-size: 64px !important;
+            line-height: 76px !important;
+         }
       }
       &__wrapper {
          display: flex;
@@ -180,26 +187,26 @@
          }
       }
       &__logo {
-         p {
-            font-size: 36px !important;
-            line-height: 42.91px !important;
+         transform: scale(0.6);
+         margin: 0 auto;
+         width: 300px;
+         & .logo__background {
+            width: 422px;
          }
       }
-      .swiper-slide {
-         width: 160px !important;
-         margin-left: 50px;
-      }
       &__cards-wrapper {
-         display: flex;
-         justify-content: center;
-         margin: 0 auto;
-         width: 250px !important;
-         margin-bottom: 40px;
-         height: 300px;
+         flex-direction: column;
+         align-items: center;
+         margin-bottom: 70px;
       }
-      &__card-wrapper {
-         justify-content: flex-start;
-         gap: 100px;
+      .blueDragon {
+         right: -109px;
+         top: -166px;
+      }
+      .yellowDragon {
+         transform: scale(0.6);
+         top: -242px;
+         left: -167px;
       }
    }
 }

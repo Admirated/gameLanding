@@ -70,9 +70,16 @@
 
    &__bottom-wrapper {
       position: relative;
-      top: -80px;
-      padding-top: 80px;
-      background: linear-gradient(180deg, rgba(1, 12, 13, 0.98) 20.66%, #012533 100%);
+      &::after {
+         content: "";
+         position: absolute;
+         top: -80px;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         z-index: -1;
+         background: linear-gradient(180deg, rgba(1, 12, 13, 0.98) 20.66%, #012533 100%);
+      }
    }
    &__second-section {
       position: relative;

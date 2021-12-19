@@ -187,6 +187,7 @@ body {
 }
 
 .blueBtn {
+   z-index: 5;
    a {
       font-family: Augusta;
       font-size: 24px;
@@ -207,6 +208,7 @@ body {
 }
 
 .title {
+   z-index: 5;
    p {
       font-family: Augusta;
       font-size: 36px !important;
@@ -223,6 +225,9 @@ body {
 }
 .show {
    display: block;
+}
+.navigation-item {
+   cursor: pointer;
 }
 @media (prefers-reduced-motion: reduce) {
    * {
@@ -246,3 +251,6 @@ body {
 @import "_legends";
 @import "_beasts";
 @import "_bank";
+@import "_token";
+@import "_roadmap";
+@import "_litepaper";

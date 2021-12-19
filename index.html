@@ -22,13 +22,17 @@
             <div class="header__navigation">
                <nav class="navigation">
                   <ul class="navigation__items-wrapper">
-                     <li class="navigation-item _active"><a href="#home" class="navigation-link">Home</a></li>
-                     <li class="navigation-item"><a href="#legends" class="navigation-link">Legends of Aragon</a></li>
-                     <li class="navigation-item"><a href="#beasts" class="navigation-link">Aragon's Beasts</a></li>
-                     <li class="navigation-item"><a href="#bank" class="navigation-link">The Bank</a></li>
-                     <li class="navigation-item"><a href="#" class="navigation-link">Tokenomics</a></li>
-                     <li class="navigation-item"><a href="#" class="navigation-link">Roadmap</a></li>
-                     <li class="navigation-item"><a href="#" class="navigation-link">Litepaper</a></li>
+                     <li class="navigation-item _active" data-section="home"><a class="navigation-link">Home</a></li>
+                     <li class="navigation-item" data-section="legends"><a class="navigation-link">Legends of Aragon</a>
+                     </li>
+                     <li class="navigation-item" data-section="beasts"><a class="navigation-link">Aragon's Beasts</a>
+                     </li>
+                     <li class="navigation-item" data-section="bank"><a class="navigation-link">The
+                           Bank</a></li>
+                     <li class="navigation-item" data-section="tokenomics"><a class="navigation-link">Tokenomics</a>
+                     </li>
+                     <li class="navigation-item" data-section="roadmap"><a class="navigation-link">Roadmap</a></li>
+                     <li class="navigation-item" data-section="litepaper"><a class="navigation-link">Litepaper</a></li>
                   </ul>
                </nav>
             </div>
@@ -39,7 +43,7 @@
    <main class="page">
       <div class="page__container">
          <a name="home"></a>
-         <section class="page__home home">
+         <section class="page__home home" data-section="home">
             <div class="home__wrapper">
                <div class="home__container">
                   <div class="home__first-section">
@@ -139,7 +143,7 @@
             </div>
          </section>
          <a name="legends"></a>
-         <section class="page__legends legends">
+         <section class="page__legends legends hide" data-section="legends">
             <div class="legends__wrapper">
                <div class="legends__title title">
                   <p>About game</p>
@@ -224,7 +228,7 @@
             </div>
          </section>
          <a name="beasts"></a>
-         <section class="page__beasts beasts">
+         <section class="page__beasts beasts hide" data-section="beasts">
             <div class="beasts__wrapper">
                <div class="beasts__title title">
                   <p>About game</p>
@@ -300,7 +304,7 @@
             </div>
          </section>
          <a name="bank"></a>
-         <section class="page__bank bank">
+         <section class="page__bank bank hide" data-section="bank">
             <div class="bank__wrapper">
                <div class="bank__logo">
                   <p>The Bank</p>
@@ -338,7 +342,453 @@
             </div>
 
          </section>
-      </div>
+         <a name="tokenomics"></a>
+         <section class="page__tokenomics tokenomics hide" data-section="tokenomics">
+            <div class="tokenomics__wrapper">
+               <div class="tokenomics__logo">
+                  <p>Tokenomics</p>
+               </div>
+            </div>
+            <div class="desk-wrapper desk">
+               <div class="desk__container">
+                  <div class="title desk__title">
+                     <p>Token Allocation - 30 mln LOAG</p>
+                  </div>
+                  <div class="desk__bar-wrapper">
+                     <div class="tokenomics__bar bar">
+                        <div class="bar-section">
+                           <div class="bar-part"></div>
+                           <p class="bar-text">1%<br>Private Sell</p>
+                        </div>
+                        <div class="bar-section">
+                           <div class="bar-part"></div>
+                           <p class="bar-text">33.5%<br>Presale</p>
+                        </div>
+                        <div class="bar-section">
+                           <div class="bar-part"></div>
+                           <p class="bar-text">30%<br>Game Rewards</p>
+                        </div>
+                        <div class="bar-section">
+                           <div class="bar-part"></div>
+                           <p class="bar-text">35%<br>Listing and Game Functionality</p>
+                        </div>
+                        <div class="bar-section">
+                           <div class="bar-part"></div>
+                           <p class="bar-text">0.5%<br>Airdrop</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="title desk__title">
+                     <p>Total taxes 5% (Buy/Sell/Transfer)</p>
+                  </div>
+                  <div class="desk__taxes-wrapper">
+                     <div class="desk__taxe taxe1">
+                        <img src="./assets/img/token_card1.png" alt="taxe">
+                        <p>Holder Wallets - 1%</p>
+                     </div>
+                     <div class="desk__taxe taxe2">
+                        <img src="./assets/img/token_card2.png" alt="taxe">
+                        <p>Reward Pool - 4%</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="blueBtn">
+                  <a href="">Play Now</a>
+               </div>
+            </div>
+
+         </section>
+         <a name="roadmap"></a>
+         <section class="page__roadmap roadmap hide" data-section="roadmap">
+            <div class="roadmap__wrapper">
+               <div class="roadmap__title">
+                  <p>Roadmap</p>
+               </div>
+            </div>
+            <div class="desk-wrapper desk">
+               <div class="desk__container">
+                  <div class="roadmap__cards-wrapper">
+                     <div class="roadmap__card-wrapper">
+                        <div class="roadmap__card-date">
+                           <p>September -<br>October</p>
+                        </div>
+                        <div class="roadmap__card-description">
+                           <p>Game Idea and <br>developing<br> Heroes and dragons<br> design</p>
+                        </div>
+                     </div>
+                     <div class="roadmap__card-wrapper">
+                        <div class="roadmap__card-date">
+                           <p>November</p>
+                        </div>
+                        <div class="roadmap__card-description">
+                           <p>Dragons creation<br> Game testing<br> Marketplace<br> development <br>Website
+                              deployement<br> LOAG Token<br>
+                              SmartContract <br>deploy</p>
+                        </div>
+                     </div>
+                     <div class="roadmap__card-wrapper">
+                        <div class="roadmap__card-date">
+                           <p>December 1-15</p>
+                        </div>
+                        <div class="roadmap__card-description">
+                           <p>LOAG token contract <br>audit <br>Private sale and <br>Marketing campaing<br> Token
+                              Presale<br> Listing on<br>
+                              PancakeSwa
+                           </p>
+                        </div>
+                     </div>
+                     <div class="roadmap__card-wrapper">
+                        <div class="roadmap__card-date">
+                           <p>December 16-31</p>
+                        </div>
+                        <div class="roadmap__card-description">
+                           <p>Game alfa version <br>launching and testing<br> Staking platform <br>development</p>
+                        </div>
+                     </div>
+                     <div class="roadmap__card-wrapper">
+                        <div class="roadmap__card-date">
+                           <p>January 1-15 </p>
+                        </div>
+                        <div class="roadmap__card-description">
+                           <p>PVP<br> Weekly battle<br> Monthly<br> tournament<br> Full game launch</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="roadmap__logo logo">
+                     <div class="logo__background">
+                        <img src="./assets/img/roadmap_logo.png" alt="logo background">
+                     </div>
+                     <div class="chars">
+                        <p class="char1">L</p>
+                        <p class="char2">e</p>
+                        <p class="char3">g</p>
+                        <p class="char4">e</p>
+                        <p class="char5">n</p>
+                        <p class="char6">d</p>
+                        <p class="char7">s</p>
+                        <p class="char8">O</p>
+                        <p class="char9">f</p>
+                        <p class="char10">A</p>
+                        <p class="char11">r</p>
+                        <p class="char12">a</p>
+                        <p class="char13">g</p>
+                        <p class="char14">o</p>
+                        <p class="char15">n</p>
+                     </div>
+                     <div class="yellowDragon">
+                        <img src="./assets/img/yellowDragon.png" alt="dragon">
+                     </div>
+                     <div class="blueDragon">
+                        <img src="./assets/img/blueDragon.png" alt="dragon">
+                     </div>
+                  </div>
+               </div>
+               <div class="blueBtn">
+                  <a href="">Play Now</a>
+               </div>
+            </div>
+
+         </section>
+         <a name="litepaper"></a>
+         <section class="about page__litepaper hide" id="about" data-section="litepaper">
+            <div class="home__third-section">
+               <div class="litepaper__wrapper">
+                  <div class="legends__logo">
+                     <p>Litepaper</p>
+                  </div>
+               </div>
+               <div class="desk-wrapper desk">
+                  <div class="row desk__container">
+                     <div class="col-md-6 d-flex justify-content-end ord">
+                        <img src="assets/img/about-dragon.png" alt="">
+                     </div>
+
+                     <div class="col-md-6">
+                        <img src="assets/img/mob-logo.png" class="mob-logo" alt="">
+                        <div class="home__logo logo">
+                           <div class="logo__background logo__background_about">
+                              <img src="./assets/img/logo_bg.png" alt="logo background">
+                           </div>
+                           <p class="char1">L</p>
+                           <p class="char2">e</p>
+                           <p class="char3">g</p>
+                           <p class="char4">e</p>
+                           <p class="char5">n</p>
+                           <p class="char6">d</p>
+                           <p class="char7">s</p>
+                           <p class="char8">O</p>
+                           <p class="char9">f</p>
+                           <p class="char10">A</p>
+                           <p class="char11">r</p>
+                           <p class="char12">a</p>
+                           <p class="char13">g</p>
+                           <p class="char14">o</p>
+                           <p class="char15">n</p>
+                        </div>
+                        <div class="desk__description">
+                           <p>
+                              Legends of Aragon is a P2E game launched on a web 3.0 platform where players will embody
+                              the
+                              role of a Templar knight who will prove his skill and worth by raising dragons and
+                              mythical
+                              beasts. His beasts will engage in hand-to-hand combat to win trophies in the form of nft
+                              tokens.
+                              Inspired by the collectible card game Magic: the Gathering, BEUROP offers a metaverse
+                              where
+                              knights and dragons collaborate to be rewarded for breeding, exploring, hunting, and more.
+                              The game offers features that allow players to create new beasts and trade them for
+                              cryptocurrencies. By trading, players can increase the value of their in-game assets.
+                              Legends of Aragon encourages players to explore more in-game content while motivating them
+                              to
+                              complete their collection of different items, equipment, and pets. Players can then evolve
+                              their
+                              beasts to advance in the story and increase their assets.
+                              The PvP mode allows players to demonstrate their pets' skills in challenging battles. This
+                              mode
+                              not only encourages players to upgrade their dragons but also to create interactions
+                              through
+                              the
+                              exchange of in-game assets; providing them with a real-life economy.
+
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+            <div class="dragon box before-line" id="dragon">
+               <div class="container">
+                  <h2 class="dragon__title">
+                     Dragons
+                  </h2>
+                  <p class="dragon__subtitle">
+                     These gigantic and fabulous reptiles have been hated and adored with equal ardor in all cultures.
+                     Capable
+                     of spitting fire and often flying; dragons have a magical connection to the forces of nature and
+                     the
+                     universe. Their millenary wisdom has granted them the role of guardian and devourer.
+                     Different species vary in shape, size, strength, color, and abilities.
+
+                  </p>
+                  <div class="desk__container">
+                     <div class=" swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                           <!-- Slides -->
+                           <div class="swiper-slide">
+                              <img src="assets/img/dragon1.png" alt="">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="assets/img/dragon2.png" alt="">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="assets/img/dragon3.png" alt="">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="assets/img/dragon4.png" alt="">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="assets/img/dragon5.png" alt="">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="assets/img/dragon6.png" alt="">
+                           </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                     </div>
+
+                  </div>
+                  <div class="dragon-wrap">
+                     <p class="dragon__text">
+                        Different species vary in shape, size, strength, color, and abilities.
+                        • Dragon (Kayda "Little Dragon")
+                        Although small, the scales that cover its body are of unparalleled strength. This
+                        reptilian-looking
+                        one with bat-like wings spits Greek Fire; a flame that does not die out. Its damage is
+                        permanent,
+                        and
+                        every second exposed to its attack brings you closer to eternal death.
+                        Because of its ability to regenerate in seconds, defeating Kayda is almost impossible.
+
+                     </p>
+                     <p class="dragon__text">
+                        • Wyvern (Tessylth "The Ice Lady")
+                        Many have been the stories about the exploits of the great dragons, such as Fafnir, or Smaug,
+                        but
+                        very
+                        few describe the ferocity of the female dragons.
+                        Tessylth, of the Wyvern race, expels fire and a blast of cold wind that freezes her enemies.
+                        Light
+                        as
+                        the wind, she can protect herself from enemy fire by flapping her wings and creating a curtain
+                        of
+                        air.
+
+                     </p>
+                     <p class="dragon__text">
+                        • Fey Dragon (Glaurung "The Deceiver")
+                        Don't let its flying lizard look fool you. Fey Dragons spit green fire and the tips of their
+                        claws
+                        possess a deadly poison. Immune to magic, they can be truly fearsome if properly trained.
+                        Glaurung's only weakness is in close combat.
+
+                     </p>
+                     <p class="dragon__text">
+                        • Asian (Zu "The Stormbird")
+                        Although mythology describes them as benevolent dragons, they are neutral beings that can cause
+                        great
+                        destruction when enraged. Their remarkable chin allows them to balance and orient themselves in
+                        the
+                        air and against wind currents.
+                        Unlike western dragons, this oriental race spits water, so their attack slows down enemies and
+                        stuns
+                        them. Its power does not lie in strength but in intelligence; Zu is a fast and intuitive dragon
+                        when
+                        hunting.
+
+                     </p>
+                     <p class="dragon__text">
+                        • Hydra (Bryzud "The Lord of Fire")
+                        The hydra (Draco hydra) is the only race among dragons, which reproduces by separating heads
+                        from
+                        its
+                        body. They fight using flames that spit from multiple directions, and their bites can be deadly.
+                        Renowned for their cannibalism, Bryzud is feared, even by other dragon races.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="levels before-line bak" id="levels">
+               <div class="block-sahdow"></div>
+               <div class="container">
+                  <h2 class="levels__title">
+                     Levels
+                  </h2>
+                  <div class="levels-wrap">
+                     <p class="levels__text">
+                        Pets can reach three levels, with each level increasing the reward potential.
+                        Bronze pet (mystery box)
+                        Silver pet (combine 5 bronze pets)
+                        Gold pet (3 best players of the PVP tournament)
+                     </p>
+                     <div class="">
+                        <div class=" swiper">
+                           <!-- Additional required wrapper -->
+                           <div class="swiper-wrapper">
+                              <!-- Slides -->
+                              <div class="levels-card">
+                                 <img src="assets/img/level-dragon1.png" alt="">
+                              </div>
+                              <div class="levels-card">
+                                 <img src="assets/img/level-dragon2.png" alt="">
+                              </div>
+                              <div class="levels-card">
+                                 <img src="assets/img/level-dragon2.png" alt="">
+                              </div>
+                           </div>
+                           <!-- If we need pagination -->
+                           <div class="swiper-pagination"></div>
+
+                           <!-- If we need navigation buttons -->
+                           <div class="swiper-button-prev"></div>
+                           <div class="swiper-button-next"></div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="box before-line">
+               <div class="container">
+                  <h2 class="box__title">
+                     Mystery Box
+                  </h2>
+                  <div class="box-wrap">
+                     <p class="box__text order2">
+                        Mystery boxes hide not only dragon eggs, but magical secrets that will elevate you from a simple
+                        squire to a knight.
+                        1) Bronze box: using BEPR you can buy a mystery box and get a bronze dragon.
+                        2) Silver box: with the game´s token LOAG, buy a bronze or silver dragon.
+                        3) Gold box: if you have a lucky star you can get a silver or gold dragon.
+                        Each box gives you a chance to get a pet piece. By collecting a total of six pieces, you can
+                        combine a
+                        beast, to make her fierce and strong.
+
+                     </p>
+                     <div class="box__img">
+                        <img src="assets/img/box-img.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="box before-line bak">
+               <div class="block-sahdow"></div>
+               <div class="container">
+                  <h2 class="box__title">
+                     Battle modes
+                  </h2>
+                  <div class="box-wrap">
+                     <div class="box__img box__img_batle">
+                        <img src="assets/img/batle-dragon.png" alt="">
+                     </div>
+                     <p class="box__text">
+                        To improve your beasts' skills you have to win battles in tournaments.
+                        Weekly Player VS Player tournament (top 10 players get an item to increase the pet's skill).
+                        Monthly PVP tournament (top 3 players can get a dollar prize and a limited gold pet).
+                     </p>
+
+                  </div>
+               </div>
+            </div>
+            <div class="box before-line">
+               <div class="container">
+                  <h2 class="box__title">
+                     Earn rewards
+                  </h2>
+                  <div class="box-wrap">
+                     <p class="box__text order2">
+                        By sending your pet to the jungle to hunt (stake BEPR) you can receive better returns on
+                        investment;
+                        staking APY depends on the pet's NFT skill.
+                     </p>
+                     <div class="box__img box__img_earn">
+                        <img src="assets/img/earn.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="box before-line">
+               <div class="container">
+                  <h2 class="box__title">
+                     Marketplace: buy, sell and trade
+                  </h2>
+                  <div class="box-wrap">
+                     <p class="box__text order2">
+                        The web-based marketplace will be a crucial part of the Legends of Aragon ecosystem, as it will
+                        encourage players to work hard to acquire and upgrade their beasts, as well as obtain rare
+                        cards.
+                        They can also buy dragon eggs to breed and fight them. Dragons with more abilities will have a
+                        higher
+                        trade value, as well as rare cards that can be found in the Mystery Boxes.
+
+                     </p>
+                     <div class="box__img box__img_market">
+                        <img src="assets/img/market.png" alt="" class="pc">
+                        <img src="assets/img/mob-img.png" alt="" class="mb">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
    </main>
 
    <footer class="page__footer footer">
@@ -375,13 +825,22 @@
                </div>
                <nav class="navigation">
                   <ul class="navigation__items-wrapper">
-                     <li class="navigation-item"><a href="#" class="navigation-link">Home</a></li>
-                     <li class="navigation-item"><a href="#" class="navigation-link">Legends of Aragon</a></li>
-                     <li class="navigation-item"><a href="#" class="navigation-link">Aragon's Beasts</a></li>
-                     <li class="navigation-item"><a href="#" class="navigation-link">The Bank</a></li>
-                     <li class="navigation-item"><a href="#" class="navigation-link">Tokenomics</a></li>
-                     <li class="navigation-item"><a href="#" class="navigation-link">Roadmap</a></li>
-                     <li class="navigation-item"><a href="#" class="navigation-link">Litepaper</a></li>
+                     <li class="navigation-item" data-section="home"><a href="#" class="navigation-link">Home</a></li>
+                     <li class="navigation-item" data-section="legends"><a href="#" class="navigation-link">Legends of
+                           Aragon</a>
+                     </li>
+                     <li class="navigation-item" data-section="beasts"><a href="#" class="navigation-link">Aragon's
+                           Beasts</a>
+                     </li>
+                     <li class="navigation-item" data-section="bank"><a href="#" class="navigation-link">The Bank</a>
+                     </li>
+                     <li class="navigation-item" data-section="tokenomics"><a href="#"
+                           class="navigation-link">Tokenomics</a>
+                     </li>
+                     <li class="navigation-item" data-section="roadmap"><a href="#" class="navigation-link">Roadmap</a>
+                     </li>
+                     <li class="navigation-item" data-section="litepaper"><a href="#"
+                           class="navigation-link">Litepaper</a></li>
                   </ul>
                </nav>
             </div>
